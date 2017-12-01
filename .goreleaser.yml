@@ -8,5 +8,8 @@ builds:
     goarch:
       - amd64
 
+checksum:
+  - name_template: "{{.ProjectName}}"_sha256
+
 dockers:
   - image: magiconair/release-test
