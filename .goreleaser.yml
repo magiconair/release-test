@@ -8,5 +8,5 @@ builds:
     goarch:
       - amd64
 
-  - dockers:
-    - image: magiconair/release-test
+dockers:
+  - image: magiconair/release-test
