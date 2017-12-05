@@ -1,15 +1,14 @@
-# .goreleaser.yml
-# Build customization
 builds:
-  - binary: release-test
+  -
+    binary: release-test
+    env:
+      - CGO_ENABLED=0
     goos:
       - darwin
       - linux
     goarch:
       - amd64
-
 checksum:
-  - name_template: "{{.ProjectName}}"_sha256
-
+  name_template: '{{.ProjectName}}_sha256'
 dockers:
   - image: magiconair/release-test
