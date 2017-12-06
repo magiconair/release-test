@@ -1,3 +1,3 @@
 FROM scratch
-COPY release-test /
-ENTRYPOINT ["/release-test"]
+COPY ${BINARY} /
+ENTRYPOINT ["/${BINARY}"]
