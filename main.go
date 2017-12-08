@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	//boooooxx
+	//boooooxxxxx
 	fmt.Println("vim-gooooxxx")
 }
