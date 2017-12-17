@@ -1,7 +1,5 @@
 GOVERSION=$(shell go version | awk '{print $$3;}')
 
-# bla
-
 release:
 	GOVERSION=$(GOVERSION) goreleaser --rm-dist  --debug
 
